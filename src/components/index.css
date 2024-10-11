@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    max-width: 600px; /* Maximum width of the alert container */
+    margin: 20px auto; /* Center the wrapper */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between alerts */
+}
+
+/* Toast Styles */
+.Toast {
+    background-color: #fff; /* White background for alerts */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the alert */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for a slight 3D effect */
+    transition: all 0.3s ease; /* Smooth transition for dismissal */
+}
+
+/* Toast Type Styles */
+.toast--info {
+    border-left: 13px solid #2196F3; /* Blue border for info */
+}
+
+.toast--success {
+    border-left: 13px solid #4CAF50; /* Green border for success */
+}
+
+.toast--error {
+    border-left: 13px solid #F44336; /* Red border for error */
+}
+
+.toast--warning {
+    border-left: 13px solid #FF9800; /* Orange border for warning */
+}
+
+/* Title Styles */
+h1 {
+    margin: 0; /* No margin for the title */
+    font-size: 1.5rem; /* Font size for the title */
+    color: #333; /* Dark text color */
+}
+
+/* Message Styles */
+p {
+    margin: 10px 0; /* Margin around the message */
+    color: #555; /* Medium gray text color */
+}
+
+/* Button Styles */
+.Toast__button {
+    background-color: transparent; /* Transparent button background */
+    border: none; /* No border */
+    color: #F44336; /* Red color for the dismiss button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for the button */
+}
+
+.Toast__button:hover {
+    text-decoration: underline; /* Underline on hover */
+}
